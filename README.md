@@ -1,6 +1,8 @@
 # YourWallet
 
-YourWallet is a modern fintech platform for instant, borderless person-to-person and business-to-business payments. The concept blends traditional banking rails with blockchain interoperability, enabling users to seamlessly move value between fiat accounts, debit cards, and crypto wallets while enjoying strong security and compliance controls.
+YourWallet is a modern fintech platform for instant, borderless person-to-person and business-to-business payments. The concept
+blends traditional banking rails with blockchain interoperability, enabling users to seamlessly move value between fiat accounts,
+debit cards, and crypto wallets while enjoying strong security and compliance controls.
 
 ## Key Pillars
 
@@ -19,10 +21,30 @@ YourWallet is a modern fintech platform for instant, borderless person-to-person
 | [Security & Compliance](docs/security_compliance.md) | Controls for KYC/AML, fraud prevention, data protection, and auditing. |
 | [Visa Card Program Roadmap](docs/card_program.md) | Steps to launch a YourWallet-branded Visa card program. |
 
+## Android application
+
+The `android/` directory now contains the first iteration of the YourWallet mobile client:
+
+- Kotlin-based Android app module configured for SDK 34
+- Material 3 theming with a branded adaptive launcher icon
+- Simple MVVM-friendly welcome screen that introduces the product vision
+
+### Prerequisites
+
+- Android Studio Giraffe (or newer) with the Android SDK 34 platform
+- JDK 17+
+
+### Running the app
+
+1. Open Android Studio and select **Open an Existing Project**.
+2. Choose the `android/` folder in this repository.
+3. Let Gradle sync the project (internet access required for dependencies).
+4. Use **Run > Run 'app'** to install the debug build on an emulator or connected device.
+
 ## Getting Started
 
 1. Review the product and technical documentation in the `docs/` folder.
-2. Set up project tooling (to be defined in the implementation phase) based on the technical architecture guidance.
+2. Explore the Android client implementation in `android/app` to understand navigation, UI composition, and future extension points.
 3. Define milestones for MVP delivery: onboarding, wallet ledger, payments, compliance operations, and card issuance.
 
 ## Roadmap Snapshot
